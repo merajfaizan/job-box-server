@@ -15,7 +15,7 @@ const client = new MongoClient(uri, {
     version: ServerApiVersion.v1,
     strict: true,
     deprecationErrors: true,
-  }
+  },
 });
 
 const run = async () => {
@@ -155,7 +155,7 @@ const run = async () => {
 run().catch((err) => console.log(err));
 
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.send("server is running!");
 });
 
 app.listen(port, () => {
